@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>에브리타임</title>
+
+  <link type="text/css" href="{% static 'css/common.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'css/common.partial.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'css/container.community.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="wrap">
+      <div id="logo">
+        <a href="/"><img src="./img/everytime_logo.png" style="width:50px;height:50px;"></a>
+        <p><span class="name multiple">에브리타임</span><span class="subname">숭실대</span></p>
+      </div>
+      <div id="account">
+        <a href="/message" title="쪽지함" class="icon message">쪽지함</a></li>
+        <a href="/my" title="내 정보" class="icon my">내 정보</a>
+        <input type="hidden" id="userUserid" value="jd06280">
+        <input type="hidden" id="userSchool" value="21">
+        <input type="hidden" id="userCampus" value="37">
+      </div>
+      <ul id="menu">
+        <li class="active"><a href="/">게시판</a></li>
+        <li><a href="/timetable">시간표</a></li>
+        <li><a href="/lecture">강의평가</a></li>
+        <li><a href="/calculator">학점계산기</a></li>
+        <li><a href="/friend">친구</a></li>
+        <li><a href="https://bookstore.everytime.kr/">책방</a></li>
+        <li><a href="https://www.campuspick.com/">캠퍼스픽</a></li>
+      </ul>
+    </div>
+</nav>
+<div id="submenu">
+      <div class="wrap">
+         <div class="divider"></div>
+         <div class="group">
+            <ul>
+            <li><a href="{% url 'freeBoard' %}" data-id="370455" class="new">자유게시판</a></li>
+            <li><a href="/257667" data-id="257667" class="new">비밀게시판</a></li>
+            <li><a href="{% url 'graduateBoard' %}" data-id="385967" class="new">졸업생게시판</a></li>
+            <li><a href="/374637" data-id="374637" class="new">새내기게시판</a></li>
+            <li><a href="/482583" data-id="482583" class="new">시사·이슈</a></li>
+            <li><a href="/370476" data-id="370476" class="new">장터게시판</a></li>
+            <li><a href="/258610" data-id="258610">정보게시판</a></li>
+            <li><a href="/367437" data-id="367437" class="new">홍보게시판</a></li>
+            </ul>
+         </div>
+         <div class="group">
+            <ul>
+            <li><a href="/418775" data-id="418775" class="new">동아리·학회</a></li>
+            </ul>
+         </div>
+         <div class="divider"></div>
+         <div class="group">
+            <ul>
+            <li><a href="/370506" data-id="370506" class="new">취업·진로</a></li>
+            <li><a href="/408938" data-id="408938" class="new">회계 동아리 in 숭실</a></li>
+            <li><a href="/429747" data-id="429747" class="new">☆대학원 가자☆</a></li>
+            </ul>
+         </div>
+         <div class="divider"></div>
+         <div class="group">
+            <ul>
+            <li><a href="/410136" data-id="410136">숭대시보</a></li>
+            <li><a href="/374150" data-id="374150">인터넷방송국</a></li>
+            <li><a href="/451992" data-id="451992">방송국</a></li>
+            <li><a href="/431825" data-id="431825">중앙감사위원회</a></li>
+            <li><a href="/483370" data-id="483370">영자신문사</a></li>
+            <li><a href="/502854" data-id="502854">학생복지위원회</a></li>
+            </ul>
+         </div>
+         <div class="divider"></div>
+         <div class="group">
+            <ul>
+            <li><a href="/376896" data-id="376896" class="new">열정 문창</a></li>
+            <li><a href="/374828" data-id="374828" class="new">철학과</a></li>
+            </ul>
+         </div>
+         <div class="divider"></div>
+         <div class="group">
+            <ul>
+            <li><a href="/484452" data-id="484452" class="new">학사정보 문의</a></li>
+            <li><a href="/454735" data-id="454735" class="new">교환학생가자~~</a></li>
+            <li><a href="/374072" data-id="374072" class="new">족보</a></li>
+            <li><a href="/377445" data-id="377445" class="new">LGBTQ+</a></li>
+            <li><a href="/376524" data-id="376524" class="new">올어바웃 아이돌</a></li>
+            <li><a href="/382899" data-id="382899" class="new">헬스/다이어트 게시판</a></li>
+            <li><a href="/388627" data-id="388627">게임 게시판</a></li>
+            <li><a href="/424431" data-id="424431">짜증날때 소리지르는 곳</a></li>
+            </ul>
+         </div>
+         <div class="group">
+            <ul>
+            <li><a href="/372693" data-id="372693" class="new">덕사리를 찾아서</a></li>
+            <li><a href="/456387" data-id="456387" class="new">난힘들때코딩을해</a></li>
+            <li><a href="/499379" data-id="499379">케인TV</a></li>
+            <li><a href="/380089" data-id="380089" class="new">네거티브 동아리</a></li>
+            <li><a href="/378826" data-id="378826" class="new">혼술회</a></li>
+               <li><a href="/community/search" class="search">게시판 찾기</a></li>
+            </ul>
+         </div>
+         <div class="divider"></div>
+         <hr>
+      </div>
+      <input type="hidden" id="communityCampusId" value="37">   </div>
+  <div id="container" class="community">
+    <aside class="none">
+      <form class="search">
+        <input type="search" name="keyword" class="text" placeholder="전체 게시판의 글을 검색하세요!">
+      </form>
+      <div class="title">
+        <a class="hamburger"></a>
+        <h1>숭실대 에브리타임</h1>
+        <ol class="buttons">
+          <li><a id="searchArticle">글 검색</a></li>
+        </ol>
+      </div>
+    </aside>
+    <div class="banners">
+      <a href="https://ad.everytime.kr/adClick?adToken=AV7mWwiOMLfJVdg131CkpWgVUlXDbnyRP5ZLgPnuuhjJETbRYVtcVtcnwVauS8eegJYbJKrTddSyrOSCgpGDCghWZfozv6MtpruEGkoZxyiWyNxlET6e7EtKybUUTKyo%2FK7UtLOCQv9GMwf73Svy8fTAUygWLQ%2BeitoSC%2B4M5C6wDIwhVuBfEqceGnl5Ej6e2H8RYksoJrcw3iRFeu38yOM8z8KkK7LP5QSXaIo70xutHUCpi0HFR5PpoVzCrIAq"><img src="https://cf-eba.everytime.kr/20220208_everytime_banner_ipadprobts.jpg"></a>
+    </div>
+    <div class="leftside">
+      <div class="card pconly">
+        <form class="logged">
+          <img src="https://cf-fpi.everytime.kr/0.png" class="picture">
+          <p class="nickname">익91</p>
+          <p class="school">송은주</p>
+          <p class="school">jd06280</p>
+          <ul class="buttons">
+            <li><a href="/my">내 정보</a></li>
+            <li><a href="/user/logout">로그아웃</a></li>
+          </ul>
+          <hr>
+        </form>
+      </div>
+      <div class="card">
+        <div class="menus">
+          <a href="/myarticle" class="myarticle">내가 쓴 글</a>
+          <a href="/mycommentarticle" class="mycommentarticle">댓글 단 글</a>
+          <a href="/myscrap" class="myscrap">내 스크랩</a>
+          <hr>
+        </div>
+      </div>
+      <div class="card">
+        <div class="banner">
+          <a href="https://ad.everytime.kr/adClick?adToken=4pzhUws46aHI0NOk%2BddB%2Fu5UuofLN35lHwp38%2BP464VtDE%2F1sCisw%2B8SYkd83aphp4k25p9isBZMQABYf7VU%2FpF8HSO%2BOTkj0N0R7wy%2BqDm%2F6upxW1T%2FoFA6PnU2FX1Ftq%2FSJr5ZLAr1OH3xiMaiKrJ8oxTrNJWo5vFW5wVbpRy4kLeUJAwnwSNEo8tbBnMFKKvDHln5oYWOeTqC%2Fafa8H6NXQbZKbTgVElcmieqC0HvMuoT2Nqiivffy3B6L3cx"><img src="https://cf-eba.everytime.kr/20220302_sementic_error_b_card.jpg"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="banner">
+          <a href="https://ad.everytime.kr/adClick?adToken=4pzhUws46aHI0NOk%2BddB%2Fu5UuofLN35lHwp38%2BP464VtDE%2F1sCisw%2B8SYkd83aphp4k25p9isBZMQABYf7VU%2FpF8HSO%2BOTkj0N0R7wy%2BqDm%2F6upxW1T%2FoFA6PnU2FX1Ftq%2FSJr5ZLAr1OH3xiMaiKrJ8oxTrNJWo5vFW5wVbpRy9KBGF6vEmhP%2BVigMh%2BvbKSETEzTP5IYrRyO3WK8RwxmD9es3JasfPy8puzG7AsXZs4olRcwWuSFoRYN6hzNGH"><img src="https://cf-eba.everytime.kr/homecard220126.png"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="banner">
+          <a href="https://ad.everytime.kr/adClick?adToken=4pzhUws46aHI0NOk%2BddB%2Fu5UuofLN35lHwp38%2BP464VtDE%2F1sCisw%2B8SYkd83aphp4k25p9isBZMQABYf7VU%2FpF8HSO%2BOTkj0N0R7wy%2BqDm%2F6upxW1T%2FoFA6PnU2FX1Ftq%2FSJr5ZLAr1OH3xiMaiKrJ8oxTrNJWo5vFW5wVbpRzq5voIEyuGF9Ex4E6Jo8QrG09p6GYMZf1KNEfmU8jfUY2XtckrLmGjM2ZSoBHdgPSk5Fcn56r1%2Fsd4jZI1FZrL"><img src="https://cf-eba.everytime.kr/20220301_everytime_card_cardpromotion.jpg"></a>
+        </div>
+      </div>
+    </div>
+    <div class="rightside"></div>
+    <div class="main"></div>
+  </div>
+<div id="bottom">
+    <ul class="links">
+      <li><a href="/page/serviceagreement">이용약관</a></li>
+      <li class="privacy"><a href="/page/privacy">개인정보처리방침</a></li>
+      <li><a href="/page/rules">커뮤니티이용규칙</a></li>
+      <li><a href="/notice">공지사항</a></li>
+      <li><a href="/page/faq">문의하기</a></li>
+      <li class="copyright"><a href="/">&copy; 에브리타임</a></li>
+    </ul>
+  </div>
+</body>
+</html>

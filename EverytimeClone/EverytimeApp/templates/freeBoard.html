@@ -1,0 +1,15 @@
+{%extends 'header.html' %}
+{% block content %}
+	<div id="container" class="article">
+		<div>자유게시판</div>
+		<form action="{% url 'create' %}" class="write" method="POST">
+			{% csrf_token %} 
+		
+			<p><input name="title" autocomplete="off" placeholder="글 제목" class="title"></p>
+			<p><textarea name="content" placeholder="글을 입력해주쇼" class="smallplaceholder"></textarea></p>
+			<input class="file" type="file" name="file" multiple="multiple">
+			<input type="submit" value="새 글 생성하기">
+		
+		</form>
+	</div>
+{% endblock %}
